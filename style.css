@@ -1,124 +1,51 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+#wrapper {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
 }
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
+#header {
+  display: flex;
+  border: 2px black solid;
+  position: fixed;
+  width: inherit;
+  height: 4rem;
 }
-body {
-  line-height: 1;
+#header .left-menu {
+  display: flex;
+  width: 70vw;
+  gap: 2rem;
 }
-ol,
-ul {
-  list-style: none;
+#header .left-menu .binance-logo img {
+  width: 150px;
+  height: 30px;
+  padding: 1rem;
 }
-blockquote,
-q {
-  quotes: none;
+#header .left-menu .selects {
+  display: flex;
+  /* gap: 1rem; */
 }
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
+#header .left-menu .selects .select {
+  display: flex;
+  gap: 0.25rem;
+  padding: 0.5rem;
+  align-items: center;
 }
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+#header .right-menu {
+  display: flex;
+  width: 30vw;
+}
+#header .right-menu .log-reg {
+  display: flex;
+  width: 50vw;
+  gap: 1rem;
+  padding: 0.5rem;
+  align-items: center;
+}
+
+#header .right-menu .optional {
+  display: flex;
+  width: 50vw;
+  gap: 1rem;
+  padding: 0.5rem;
+  align-items: center;
 }

@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Binance</title>
   </head>
   <body>
@@ -13,31 +15,53 @@
           <div class="binance-logo">
             <img src="./images/binance-h.png" alt="binance logo" />
           </div>
-          <select name="Buy Crypto" id=""></select>
-          <select name="Markets" id=""></select>
-          <select name="Trade" id=""></select>
-          <select name="Derivatives" id=""></select>
-          <select name="Earn " id=""></select>
-          <select name="FINANCE" id=""></select>
-          <div>NFT</div>
-          <select name="institutional" id=""></select>
-          <div>Feed</div>
+          <div class="selects">
+            <div class="select">
+              <div>Buy Crypto</div>
+              <select name="Buy Crypto" id=""></select>
+            </div>
+            <div class="select">
+              <div>Markets</div>
+              <select name="Markets" id=""></select>
+            </div>
+            <div class="select">
+              <div>Trade</div>
+              <select name="Trade" id=""></select>
+            </div>
+            <div class="select">
+              <div>Derivatives</div>
+              <select name="Derivatives" id=""></select>
+            </div>
+            <div class="select">
+              <div>Earn</div>
+              <select name="Earn" id=""></select>
+            </div>
+            <div class="select">
+              <div>Finance</div>
+              <select name="Finance" id=""></select>
+            </div>
+            <div class="select">NFT</div>
+            <div class="select">
+              <div>Institutional</div>
+              <select name="Institutional" id=""></select>
+            </div>
+            <div class="select">Feed</div>
+          </div>
         </div>
         <div class="right-menu">
           <div class="log-reg">
             <button class="log-in">LogIn</button>
             <button class="register">Register</button>
-            <div class="qrcode">QR code</div>
           </div>
           <div class="optional">
-            <div class="language"></div>
-            <div class="region"></div>
-            <div class="mode"></div>
+            <div class="qrcode">QR code</div>
+            <div class="language">lan</div>
+            <div class="region">reg</div>
+            <div class="mode">mode</div>
           </div>
         </div>
       </div>
-      <div id="register-now"></div>
-      <div id="signup">
+      <!-- <div id="signup">
         <div class="top">
           <div class="left">
             <div class="title">
@@ -57,7 +81,7 @@
             </div>
           </div>
           <div class="right">
-            <img src="./images/foreground-image-light.png" alt="" />
+            <img src="./images/foreground-image-light.png" alt="intro" />
           </div>
         </div>
         <div class="bottom">
@@ -103,7 +127,7 @@
             <div class="build-steps">
               <div class="build-step-1">
                 <div class="icon">
-                  <img src="./images/explore image 1.png" alt="" />
+                  <img src="./images/portfolio icon 1.png" alt="step 1" />
                 </div>
                 <div class="container">
                   <div class="title">Verify your identity</div>
@@ -115,7 +139,7 @@
               </div>
               <div class="build-step-2">
                 <div class="icon">
-                  <img src="./images/portfolio icon 2.png" alt="" />
+                  <img src="./images/portfolio icon 2.png" alt="step 2" />
                 </div>
                 <div class="container">
                   <div class="title">Fund your account</div>
@@ -127,7 +151,7 @@
               </div>
               <div class="build-step-3">
                 <div class="icon">
-                  <img src="./images/portfolio icon 3.png" alt="" />
+                  <img src="./images/portfolio icon 3.png" alt="step 3" />
                 </div>
                 <div class="container">
                   <div class="title">Start trading</div>
@@ -174,7 +198,7 @@
           <div class="container">
             <div class="left">
               <div class="image">
-                <img src="./images/explore image 1.png" alt="" />
+                <img src="./images/explore image 1.png" alt="explore 1" />
               </div>
               <div class="title"></div>
               <div class="description"></div>
@@ -183,12 +207,12 @@
               <div class="title"></div>
               <div class="description"></div>
               <div class="image">
-                <img src="./images/explore image 2.png" alt="" />
+                <img src="./images/explore image 2.png" alt="explore 2" />
               </div>
             </div>
             <div class="right">
               <div class="image">
-                <img src="./images/explore image 3.png" alt="" />
+                <img src="./images/explore image 3.png" alt="explore 3" />
               </div>
               <div class="title"></div>
               <div class="description"></div>
@@ -213,7 +237,7 @@
             <div class="left">
               <div class="top">
                 <div class="icon">
-                  <img src="./images/exchange icon 1.png" alt="" />
+                  <img src="./images/exchange icon 1.png" alt="exchange 1" />
                 </div>
                 <div class="container">
                   <div class="title">Secure Asset Fund for Users (SAFU)</div>
@@ -225,7 +249,7 @@
               </div>
               <div class="center">
                 <div class="icon">
-                  <img src="./images/exchange icon 2.png" alt="" />
+                  <img src="./images/exchange icon 2.png" alt="exchange 2" />
                 </div>
                 <div class="container">
                   <div class="title">Personalised Access Control</div>
@@ -238,7 +262,7 @@
               </div>
               <div class="bottom">
                 <div class="icon">
-                  <img src="./images/exchange icon 3.png" alt="" />
+                  <img src="./images/exchange icon 3.png" alt="exchange 3" />
                 </div>
                 <div class="container">
                   <div class="title">Advanced Data Encryption</div>
@@ -270,7 +294,10 @@
           </div>
           <div class="section">
             <div class="left">
-              <img src="./images/tarde anywhere image .png" alt="" />
+              <img
+                src="./images/tarde anywhere image .png"
+                alt="trade anywhere"
+              />
             </div>
             <div class="right">
               <div class="qr-code">
@@ -299,7 +326,7 @@
           <div class="container">
             <div class="left">
               <div class="icon">
-                <img src="./images/need help icon 1.png" alt="" />
+                <img src="./images/need help icon 1.png" alt="need help 1" />
               </div>
               <div class="text">
                 <div class="title">24/7 Chat Support</div>
@@ -312,7 +339,7 @@
             </div>
             <div class="center">
               <div class="icon">
-                <img src="./images/need help icon 2.png" alt="" />
+                <img src="./images/need help icon 2.png" alt="need help 2" />
               </div>
               <div class="text">
                 <div class="title">FAQs</div>
@@ -324,7 +351,7 @@
             </div>
             <div class="right">
               <div class="icon">
-                <img src="./images/need help icon 3.png" alt="" />
+                <img src="./images/need help icon 3.png" alt="need help 3" />
               </div>
               <div class="text">
                 <div class="title">Blog</div>
@@ -386,7 +413,7 @@
           <div class="list">
             <a href="">Downloads</a>
             <a href="">Desktop Application</a>
-            <a href="">Buy Crypto</a>
+            <a href=""></a>
             <a href="">Institutional & VIP Services</a>
             <a href="">OTC Trading</a>
             <a href="">Refferal</a>
@@ -445,7 +472,7 @@
             <div></div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </body>
 </html>
