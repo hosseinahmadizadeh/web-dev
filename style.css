@@ -5,10 +5,10 @@
 }
 #header {
   display: flex;
-  border: 2px black solid;
   position: fixed;
   width: inherit;
   height: 4rem;
+  background-color: rgb(253, 253, 253);
 }
 #header .left-menu {
   display: flex;
@@ -18,7 +18,7 @@
 #header .left-menu .binance-logo img {
   width: 150px;
   height: 30px;
-  padding: 1rem;
+  padding: 1.1rem;
 }
 #header .left-menu .selects {
   display: flex;
@@ -37,15 +37,59 @@
 #header .right-menu .log-reg {
   display: flex;
   width: 50vw;
-  gap: 1rem;
+  gap: 0.5rem;
   padding: 0.5rem;
   align-items: center;
 }
-
+#header .right-menu .log-reg .log-in {
+  padding: 0.5rem 1.5rem;
+  background-color: rgb(255, 255, 255);
+  border: none;
+}
+#header .right-menu .log-reg .register {
+  padding: 0.5rem 2rem;
+  background-color: rgb(255, 217, 0);
+  border: none;
+  border-radius: 8px;
+}
 #header .right-menu .optional {
   display: flex;
   width: 50vw;
   gap: 1rem;
   padding: 0.5rem;
   align-items: center;
+}
+#wrapper #signup {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  margin-top: 5rem;
+  align-items: center;
+}
+#signup .top {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+}
+#signup .top .left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 50vw;
+  align-items: center;
+}
+#signup .top .right {
+  display: block;
+  width: 50vw;
+  align-items: center;
+}
+#signup .top .right img {
+  width: 38rem;
+  height: 30rem;
+}
+#signup .bottom {
+  display: flex;
+  padding: 2rem;
+  align-items: center;
+  gap: 4rem;
 }
