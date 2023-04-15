@@ -1,3 +1,6 @@
+body {
+  font-family: "DM Sans", sans-serif;
+}
 #wrapper {
   width: 100vw;
   display: flex;
@@ -22,7 +25,6 @@
 }
 #header .left-menu .selects {
   display: flex;
-  /* gap: 1rem; */
 }
 #header .left-menu .selects .select {
   display: flex;
