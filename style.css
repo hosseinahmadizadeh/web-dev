@@ -62,10 +62,14 @@ body {
   align-items: center;
 }
 #wrapper #signup {
+  background: url(./images/background.png);
+  background-size: cover;
   display: flex;
+  overflow-x: hidden;
   flex-direction: column;
   width: 100vw;
-  margin-top: 5rem;
+  height: 650px;
+  margin-top: 4.5rem;
   align-items: center;
 }
 #signup .top {
@@ -78,20 +82,80 @@ body {
   flex-direction: column;
   gap: 2rem;
   width: 50vw;
+  align-items: start;
+  padding: 0 2rem 5rem 10rem;
+  box-sizing: border-box;
+}
+#signup .top .left .btn {
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  gap: 1rem;
+}
+#signup .top .left .btn .container {
+  display: flex;
+}
+#signup .top .left .btn .container .line {
+  background-color: rgb(207, 207, 207);
+  box-sizing: border-box;
+  width: 120px;
+  height: 2px;
+}
+#signup .top .left .btn .container .text {
+  color: rgb(130, 130, 130);
+}
+#signup .top .left .title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 3rem;
+  margin-bottom: 1rem;
+}
+#signup .top .left .link a {
+  font-size: 1.5rem;
+  text-decoration: none;
 }
 #signup .top .right {
   display: block;
   width: 50vw;
-  align-items: center;
 }
 #signup .top .right img {
-  width: 38rem;
-  height: 30rem;
+  width: 32rem;
+  height: 25rem;
+  padding: 1rem 5rem;
+  margin-top: 5rem;
 }
 #signup .bottom {
   display: flex;
-  padding: 2rem;
+  padding: 2rem 1rem;
+  gap: 1rem;
   align-items: center;
   gap: 4rem;
+}
+#signup .bottom .trade-vol {
+  padding: 2rem;
+}
+#signup .bottom .trade-vol .title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+#signup .bottom .crypto-listed {
+  padding: 2rem;
+}
+#signup .bottom .crypto-listed .title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+#signup .bottom .users {
+  padding: 2rem;
+}
+#signup .bottom .users .title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+#signup .bottom .lowest-fees {
+  padding: 2rem;
+}
+#signup .bottom .lowest-fees .title {
+  font-size: 3rem;
+  font-weight: bold;
 }
