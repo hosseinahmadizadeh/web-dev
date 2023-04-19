@@ -244,13 +244,11 @@ body {
   opacity: 1;
 } */
 #slider-container {
-  padding: 2rem 12rem;
+  padding: 1rem 0;
 }
 .slider-wrapper {
-  padding-bottom: 10rem;
-  position: absolute;
   width: 70rem;
-  /* transform: translate(-50%, 50%); */
+  margin: 0 auto;
   overflow: hidden;
 }
 .slider {
@@ -264,12 +262,8 @@ body {
 }
 .slider-nav {
   display: flex;
+  padding: 2rem 32rem;
   gap: 1rem;
-  position: absolute;
-  bottom: 8rem;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
 }
 .slider-nav a {
   width: 0.5rem;
@@ -288,9 +282,7 @@ body {
 .slider-nav .nav-3 {
   animation: move-nav3 9s infinite;
 }
-.slider-nav a:hover {
-  opacity: 1;
-}
+
 @keyframes move-slide {
   10% {
     transform: translateX(0);
@@ -319,9 +311,9 @@ body {
 }
 @keyframes move-nav1 {
   0% {
-    opacity: 0.6;
-    background-color: rgb(0, 0, 0);
-    width: 0.5rem;
+    opacity: 1;
+    background-color: rgb(255, 217, 0);
+    width: 1.5rem;
     border-radius: 5px;
   }
   15% {
@@ -333,8 +325,17 @@ body {
   16% {
     opacity: 0.6;
   }
-  100% {
+  90% {
     opacity: 0.6;
+    background-color: rgb(0, 0, 0);
+    width: 0.5rem;
+    border-radius: 5px;
+  }
+  100% {
+    opacity: 1;
+    background-color: rgb(255, 217, 0);
+    width: 1.5rem;
+    border-radius: 5px;
   }
 }
 @keyframes move-nav2 {
@@ -389,4 +390,11 @@ body {
   100% {
     opacity: 0.6;
   }
+}
+#wrapper #main {
+  width: 100%;
+}
+#wrapper #main .crypto-portfolio {
+  width: 100%;
+  display: flex;
 }
