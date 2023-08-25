@@ -1,0 +1,236 @@
+#wrapper #signup {
+  background: url(./images/background.png);
+  background-size: cover;
+  width: 100%;
+  padding: 16px 0;
+  margin: 0 auto;
+  align-items: center;
+}
+#signup .top {
+  display: flex;
+  align-items: center;
+}
+#signup .top .left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 50vw;
+  align-items: start;
+  padding: 0 0 5rem 13rem;
+  box-sizing: border-box;
+}
+#signup .top .left .btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+#signup .top .left .btn .container {
+  display: flex;
+}
+#signup .top .left .title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 3rem;
+  margin-bottom: 1rem;
+}
+#signup .top .left .link a {
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: rgb(88, 88, 88);
+  margin-left: 0.5rem;
+}
+#signup .top .left .btn .signup-btn {
+  width: 400px;
+  height: 50px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(255, 217, 0);
+}
+#signup .top .left .btn .container .line {
+  background-color: rgb(207, 207, 207);
+  box-sizing: border-box;
+  margin: 0.5rem 0.5rem;
+  width: 130px;
+  height: 2px;
+}
+#signup .top .left .btn .container .text {
+  color: rgb(130, 130, 130);
+}
+#signup .top .left .btn .ga-btns {
+  display: flex;
+  gap: 30px;
+}
+#signup .top .left .btn .ga-btns .google-btn {
+  width: 185px;
+  height: 50px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(222, 222, 222);
+  font-size: 1rem;
+}
+#signup .top .left .btn .ga-btns .apple-btn {
+  width: 185px;
+  height: 50px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(222, 222, 222);
+  font-size: 1rem;
+}
+#signup .top .right {
+  width: 50vw;
+}
+#signup .top .right img {
+  width: 32rem;
+  height: 25rem;
+  padding: 4rem;
+}
+#signup .bottom {
+  display: flex;
+  padding: 0 12rem;
+  width: auto;
+}
+#signup .bottom .trade-vol {
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+#signup .bottom .trade-vol .title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+#signup .bottom .trade-vol .description {
+  font-size: 1rem;
+  color: rgb(65, 65, 65);
+}
+#signup .bottom .crypto-listed {
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+#signup .bottom .crypto-listed .title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+#signup .bottom .crypto-listed .description {
+  font-size: 1rem;
+  color: rgb(65, 65, 65);
+}
+#signup .bottom .users {
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+#signup .bottom .users .title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+#signup .bottom .users .description {
+  font-size: 1rem;
+  color: rgb(65, 65, 65);
+}
+#signup .bottom .lowest-fees {
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+#signup .bottom .lowest-fees .title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+#signup .bottom .lowest-fees .description {
+  font-size: 1rem;
+  color: rgb(65, 65, 65);
+}
+@media screen and (max-width: 640px) {
+  #wrapper #signup {
+    background: none;
+    display: flex;
+    max-width: 430px;
+    align-items: center;
+    justify-content: center;
+  }
+  #wrapper #signup .top {
+    max-width: 430px;
+    align-items: center;
+    justify-content: center;
+  }
+  #wrapper #signup .top .left {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  #wrapper #signup .top .left .btn {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+  #wrapper #signup .top .left .btn .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #wrapper #signup .top .left .title {
+    width: 350px;
+    text-align: center;
+    font-size: var(--font-lg);
+    font-weight: bold;
+    margin: 0;
+  }
+  #wrapper #signup .top .left .link a {
+    margin: 0 auto;
+    font-size: var(--font-sm);
+    text-decoration: none;
+    color: rgb(88, 88, 88);
+  }
+  #wrapper #signup .top .left .btn .signup-btn {
+    width: 250px;
+    height: 40px;
+    font-size: var(--font-md);
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(255, 217, 0);
+  }
+  #wrapper #signup .top .left .btn .container .line {
+    background-color: rgb(207, 207, 207);
+    width: 120px;
+    height: 1px;
+  }
+  #wrapper #signup .top .left .btn .container .text {
+    color: rgb(130, 130, 130);
+    font-size: var(--font-sm);
+  }
+  #wrapper #signup .top .left .btn .ga-btns {
+    display: flex;
+  }
+  #signup .top .left .btn .ga-btns .google-btn {
+    width: 110px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(222, 222, 222);
+    font-size: var(--font-md);
+  }
+  #signup .top .left .btn .ga-btns .apple-btn {
+    width: 110px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(222, 222, 222);
+    font-size: var(--font-md);
+  }
+  #signup .top .right {
+    display: none;
+  }
+
+  #signup .bottom {
+    display: none;
+  }
+}

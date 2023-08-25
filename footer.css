@@ -1,0 +1,133 @@
+#wrapper #footer {
+  display: flex;
+  gap: 3rem;
+  max-width: 75vw;
+  margin: 4rem auto;
+}
+#footer .col {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#footer .about-us {
+  width: 11vw;
+}
+#footer .products {
+  width: 11vw;
+}
+#footer .services {
+  width: 11vw;
+}
+#footer .support {
+  width: 11vw;
+}
+#footer .learn {
+  width: 11vw;
+}
+#footer .comunity {
+  width: 20vw;
+}
+#footer .col .title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+#footer .col .list {
+  display: flex;
+  flex-direction: column;
+}
+#footer .col .list a {
+  font-size: 1rem;
+  padding: 0.3rem 0;
+  text-decoration: none;
+  color: rgb(60, 60, 60);
+}
+#footer .comunity .list {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+#footer .comunity .list .grid-item {
+  opacity: 0.7;
+}
+#footer .comunity .list .grid-item:hover {
+  opacity: 1;
+}
+#footer .comunity .list .grid-item img {
+  padding: 1rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+@media screen and (max-width: 640px) {
+  #wrapper #footer {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  #footer .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  #footer .about-us {
+    width: 300px;
+  }
+  #footer .products {
+    width: 300px;
+  }
+  #footer .services {
+    width: 300px;
+  }
+  #footer .support {
+    width: 300px;
+  }
+  #footer .learn {
+    width: 300px;
+  }
+  #footer .comunity {
+    width: 300px;
+  }
+  #footer .col .title {
+    font-size: var(--font-lg);
+    font-weight: bold;
+  }
+  #footer .col .list-container {
+    display: flex;
+    gap: 2rem;
+  }
+  #footer .col .list-container .list {
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+    text-align: center;
+  }
+  #footer .col .list-container .list a {
+    font-size: var(--font-md);
+    padding: 0.3rem 0;
+    text-decoration: none;
+    color: rgb(60, 60, 60);
+  }
+  #footer .comunity .list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+  }
+  #footer .comunity .list .grid-item {
+    opacity: 0.7;
+  }
+  #footer .comunity .list .grid-item:hover {
+    opacity: 1;
+  }
+  #footer .comunity .list .grid-item img {
+    padding: 1rem;
+    width: 20px;
+    height: 20px;
+  }
+}

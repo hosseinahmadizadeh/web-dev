@@ -1,0 +1,98 @@
+#header {
+  display: flex;
+  width: 100%;
+  height: 4rem;
+  background-color: rgb(255, 255, 255);
+}
+#header .left-menu {
+  display: flex;
+  width: 70vw;
+  gap: 2rem;
+}
+#header .binance-logo img {
+  width: 10rem;
+  height: 2rem;
+  padding: 1rem;
+}
+#header .left-menu .selects {
+  display: flex;
+  gap: 1rem;
+}
+#header .left-menu .selects .select {
+  display: flex;
+  padding: 0.5rem 0;
+  align-items: center;
+  color: rgb(100, 100, 100);
+}
+#header .left-menu .selects .select select {
+  border: none;
+}
+#header .right-menu {
+  display: flex;
+  width: 30vw;
+}
+#header .right-menu .auth {
+  display: flex;
+  width: 50vw;
+  gap: 0.5rem;
+  align-items: center;
+}
+#header .right-menu .auth .log-in {
+  width: 60px;
+  height: 30px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+}
+#header .right-menu .auth .register {
+  width: 90px;
+  height: 30px;
+  background-color: rgb(255, 217, 0);
+  border: none;
+  border-radius: 8px;
+}
+#header .right-menu .optional {
+  display: flex;
+  width: 50vw;
+  gap: 1rem;
+  padding: 0.5rem;
+  align-items: center;
+}
+@media screen and (max-width: 640px) {
+  #wrapper #header {
+    max-width: 430px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #wrapper #header .left-menu {
+    display: none;
+  }
+  #wrapper #header .binance-logo img {
+    width: 125px;
+    height: 25px;
+    padding: 0 1.5rem;
+  }
+  #wrapper #header .right-menu {
+    display: flex;
+    max-width: 50vw;
+    justify-content: flex-end;
+    margin-right: 20px;
+  }
+  #wrapper #header .right-menu .optional {
+    display: none;
+  }
+  #wrapper #header .right-menu .auth {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+  }
+  #wrapper #header .right-menu .auth .log-in {
+    width: 25px;
+    font-size: var(--font-sm);
+  }
+  #wrapper #header .right-menu .auth .register {
+    width: 110px;
+    border-radius: 4px;
+    font-size: var(--font-sm);
+  }
+}
