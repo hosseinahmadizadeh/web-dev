@@ -73,6 +73,8 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    border-bottom: 1px solid rgb(184, 184, 184);
+    padding-bottom: 3rem;
   }
   #footer .about-us {
     width: 300px;
@@ -91,6 +93,8 @@
   }
   #footer .comunity {
     width: 300px;
+    border-bottom: none;
+    padding-bottom: 0;
   }
   #footer .col .title {
     font-size: var(--font-lg);
@@ -98,16 +102,16 @@
   }
   #footer .col .list-container {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
   }
   #footer .col .list-container .list {
     display: flex;
     flex-direction: column;
-    width: 80px;
+    width: 150px;
     text-align: center;
   }
   #footer .col .list-container .list a {
-    font-size: var(--font-md);
+    font-size: var(--font-sm);
     padding: 0.3rem 0;
     text-decoration: none;
     color: rgb(60, 60, 60);
